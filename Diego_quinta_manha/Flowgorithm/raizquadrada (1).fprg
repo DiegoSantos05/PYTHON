@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="autologon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-25 09:58:34 "/>
+        <attribute name="created" value="YXV0b2xvZ29uO1NQMDUtTEFCMTEtMDI4OzIwMjQtMDQtMjU7IjA5OjI4OjM1ICI7Mjk5OA=="/>
+        <attribute name="edited" value="YXV0b2xvZ29uO1NQMDUtTEFCMTEtMDI4OzIwMjQtMDQtMjU7IjA5OjU4OjM0ICI7MTszMTA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="y1, y2, x1, x2, calculo" type="Real" array="False" size=""/>
+            <assign variable="y1" expression="20"/>
+            <assign variable="y2" expression="12"/>
+            <assign variable="x1" expression="8"/>
+            <assign variable="x2" expression="4"/>
+            <assign variable="calculo" expression="sqrt((y1+y2)^2-(x1-x2)^2)"/>
+            <output expression="&quot;Calculo=&quot;&amp;calculo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

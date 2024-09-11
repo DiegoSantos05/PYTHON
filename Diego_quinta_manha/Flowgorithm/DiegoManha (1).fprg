@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="autologon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-25 09:01:31 "/>
+        <attribute name="created" value="YXV0b2xvZ29uO1NQMDUtTEFCMTEtMDI4OzIwMjQtMDQtMjU7IjA4OjQ0OjMyICI7Mjk5Mg=="/>
+        <attribute name="edited" value="YXV0b2xvZ29uO1NQMDUtTEFCMTEtMDI4OzIwMjQtMDQtMjU7IjA5OjAxOjMxICI7MTszMDkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Linha" type="String" array="True" size="3"/>
+            <assign variable="Linha[0]" expression="&quot;Joao&quot;"/>
+            <assign variable="Linha[1]" expression="&quot;21&quot;"/>
+            <assign variable="Linha[2]" expression="&quot;2500,00&quot;"/>
+            <call expression="Salvar(Linha)"/>
+        </body>
+    </function>
+    <function name="Salvar" type="None" variable="">
+        <parameters>
+            <parameter name="linha" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="NomeArquivo" type="String" array="False" size=""/>
+            <assign variable="NomeArquivo" expression="&quot;Dado1.csv&quot;"/>
+            <declare name="L" type="String" array="False" size=""/>
+            <assign variable="L" expression="linha[0]&amp;&quot;;&quot;&amp;linha[1]&amp;&quot;;&quot;&amp;linha[2]"/>
+            <open expression="NomeArquivo" mode="write"/>
+            <write expression="L"/>
+            <close/>
+        </body>
+    </function>
+</flowgorithm>

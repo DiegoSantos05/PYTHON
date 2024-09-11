@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="autologon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-16 10:26:39 "/>
+        <attribute name="created" value="YXV0b2xvZ29uO1NQMDUtTEFCMTEtMDI5OzIwMjQtMDUtMTY7IjA5OjEzOjQ4ICI7Mjk5OA=="/>
+        <attribute name="edited" value="YXV0b2xvZ29uO1NQMDUtTEFCMTEtMDI5OzIwMjQtMDUtMTY7IjEwOjI2OjM5ICI7MzszMTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, RESULTADO" type="Integer" array="False" size=""/>
+            <declare name="OPCAO" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o Primeiro Numero&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;Digite o Segundo Numero&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;Escolha uma Opera&#231;&#227;o: (+,-,*,/)&quot;" newline="True"/>
+            <input variable="OPCAO"/>
+            <if expression="OPCAO==&quot;+&quot;">
+                <then>
+                    <assign variable="RESULTADO" expression="soma(A,B)"/>
+                    <output expression="&quot;O resultado da Soma &#233; &quot;&amp;RESULTADO" newline="True"/>
+                </then>
+                <else>
+                    <if expression="OPCAO==&quot;-&quot;">
+                        <then>
+                            <assign variable="RESULTADO" expression="subtracao(A,B)"/>
+                            <output expression="&quot;O resultado da subtracao &#233; &quot;&amp;RESULTADO" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="OPCAO==&quot;*&quot;">
+                                <then>
+                                    <assign variable="RESULTADO" expression="multiplicacao(A,B)"/>
+                                    <output expression="&quot;O resultado da multiplicacao &#233; &quot;&amp;RESULTADO" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="OPCAO==&quot;/&quot;">
+                                        <then>
+                                            <assign variable="RESULTADO" expression="divisao(a,b)"/>
+                                            <output expression="&quot;O resultado da divisao &#233; &quot;&amp;RESULTADO" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;OPCAO INVALIDA&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="divisao" type="Integer" variable="ret">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ret" type="Integer" array="False" size=""/>
+            <assign variable="ret" expression="A/B"/>
+        </body>
+    </function>
+    <function name="multiplicacao" type="Integer" variable="ret">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ret" type="Integer" array="False" size=""/>
+            <assign variable="ret" expression="A*B"/>
+        </body>
+    </function>
+    <function name="soma" type="Integer" variable="ret">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ret" type="Integer" array="False" size=""/>
+            <assign variable="ret" expression="A+B"/>
+        </body>
+    </function>
+    <function name="subtracao" type="Integer" variable="ret">
+        <parameters>
+            <parameter name="A" type="Integer" array="False"/>
+            <parameter name="B" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ret" type="Integer" array="False" size=""/>
+            <assign variable="ret" expression="A-B"/>
+        </body>
+    </function>
+</flowgorithm>

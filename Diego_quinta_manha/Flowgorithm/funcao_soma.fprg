@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="autologon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-16 09:07:11 "/>
+        <attribute name="created" value="YXV0b2xvZ29uO1NQMDUtTEFCMTEtMDI5OzIwMjQtMDUtMTY7IjA4OjU1OjEyICI7Mjk5NA=="/>
+        <attribute name="edited" value="YXV0b2xvZ29uO1NQMDUtTEFCMTEtMDI5OzIwMjQtMDUtMTY7IjA5OjA3OjExICI7MTszMDk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, resultado" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="5"/>
+            <assign variable="b" expression="13"/>
+            <assign variable="resultado" expression="soma(a,b)"/>
+            <output expression="&quot;A soma de a+b=&quot;&amp;resultado" newline="True"/>
+        </body>
+    </function>
+    <function name="soma" type="Integer" variable="ret">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ret" type="Integer" array="False" size=""/>
+            <assign variable="ret" expression="x+y"/>
+        </body>
+    </function>
+</flowgorithm>
